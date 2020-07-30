@@ -4,7 +4,7 @@ class Paper{
             isStatic:false,
             restitution:0.3,
             friction:0.5,
-            density:1.2
+            density:0.7
         }
         this.body=Bodies.circle(x,y,30,options);
         this.radius=30;
@@ -13,8 +13,8 @@ class Paper{
     display(){
         var pos=this.body.position;
         push();
-        translate(pos.x,pos.y);
-        rotate(this.body.angle);
+        //translate(pos.x,pos.y);
+        //rotate(this.body.angle);
         fill(255);
         ellipseMode(CENTER);
         ellipse(pos.x,pos.y,60,60);

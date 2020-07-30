@@ -20,10 +20,10 @@ function setup() {
 	//Create the Bodies Here.
 
 	ground=new Ground(400,690,800,20);
-	paper= new Paper(300,400);
+	paper= new Paper(200,400);
 	box1= new Dustbin(660,660,200,20);
-	box2= new Dustbin(550,600,20,100);
-	box3= new Dustbin(770,600,20,100);
+	box2= new Dustbin(550,600,20,140);
+	box3= new Dustbin(770,600,20,140);
 
 
   
@@ -45,7 +45,7 @@ function draw() {
 
 function keyPressed(){
 	if(keyCode===UP_ARROW){
-		Matter.Body.applyForce(paper.body,paper.body.position,{x:85,y:-60});
+		Matter.Body.applyForce(paper.body,paper.body.position,{x:80,y:-90});
 	}
 }
 
